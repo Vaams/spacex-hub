@@ -1,0 +1,641 @@
+/*Portrait Small Size*/
+@media (min-width: 320px) and (max-width: 360px) and (orientation: portrait) {
+    .nav__img {
+        width: 12.75rem;
+        height: 2.5rem;
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 2.20rem;
+                color: $white;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+    }
+
+    .main {
+        &__next-launch {
+            display: block;
+            text-align: center;
+
+            & h1 {
+                font-size: 2.3rem;
+            }
+
+            & span {
+                font-size: 2.5rem;
+                @include flex-jc-c-ai-c;
+            }
+        }
+
+        &__countdown {
+            width: 90vw;
+            height: 60vh;
+            @include grid-countdown-mobile;
+            column-gap: 0;
+            row-gap: 0;
+            margin-bottom: 1.25rem;
+            
+            &-gridD { 
+                grid-area: 1 / 1 / 2 / 2;
+                background-color: $background-countdown;
+                font-size: 6.25rem;
+            }
+      
+            &-captionD {
+                grid-area: 2 / 1 / 3 / 2; 
+                background-color: $background-countdown-caption;
+                font-size: 1rem;
+            }
+      
+            &-gridH {
+                grid-area: 1 / 2 / 2 / 3;
+                background-color: $background-countdown;
+                font-size: 6.25rem;
+            }
+      
+            &-captionH {
+                grid-area: 2 / 2 / 3 / 3; 
+                background-color: $background-countdown-caption;
+                font-size: 1rem;
+            }
+      
+            &-gridM {
+                grid-area: 3 / 1 / 4 / 2; 
+                background-color: $background-countdown;
+                font-size: 6.25rem;
+            }
+      
+            &-captionM {
+                grid-area: 4 / 1 / 5 / 2; 
+                background-color: $background-countdown-caption;
+                font-size: 1rem;
+            }
+      
+            &-gridS {
+                grid-area: 3 / 2 / 4 / 3; 
+                background-color: $background-countdown;
+                font-size: 6.25rem;
+            }
+      
+            &-captionS {
+                grid-area: 4 / 2 / 5 / 3; 
+                background-color: $background-countdown-caption;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+/*Portrait Medium Size*/
+@media (min-width: 375px) and (max-width: 786px) and (orientation: portrait) {
+    .nav {
+        &__img {
+            width: 12.75rem;
+            height: 2.5rem;
+            aspect-ratio: 2 / 1;
+        }
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 2.20rem;
+                color: $white;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+    }
+
+    .main {
+        &__next-launch {
+            display: block;
+
+            & span {
+                @include flex-jc-c-ai-c;
+            }
+        }
+
+        &__countdown {
+            width: 90vw;
+            height: 55vh;
+            @include grid-countdown-mobile;
+
+      
+            &-gridH {
+                grid-area: 1 / 2 / 2 / 3;
+            }
+      
+            &-captionH {
+                grid-area: 2 / 2 / 3 / 3; 
+            }
+      
+            &-gridM {
+                grid-area: 3 / 1 / 4 / 2; 
+            }
+      
+            &-captionM {
+                grid-area: 4 / 1 / 5 / 2; 
+            }
+      
+            &-gridS {
+                grid-area: 3 / 2 / 4 / 3; 
+            }
+      
+            &-captionS {
+                grid-area: 4 / 2 / 5 / 3; 
+            }
+        }
+    }
+}
+
+/*Portrait iPad*/
+@media (min-width: 768px) and (max-width: 834px) and (orientation: portrait) {
+    .nav {
+        height: 7.25rem;
+
+        &__img {
+            width: 16rem;
+            height: 3.5rem;
+            aspect-ratio: 2 / 1;
+        }
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+        .fa-bars {
+            font-size: 2.7rem;
+            color: $white;
+        }
+    }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+
+        &__item {
+            width: 16rem;
+
+            & a {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .main {
+        &__next-launch {
+            & h1 {
+                font-size: 3.3rem;
+            }
+    
+            & span {
+                margin-left: 0;
+                font-size: 3.6rem;
+            }
+        }
+
+        &__countdown {
+            width: 70vw;
+   
+            &-gridD { 
+                font-size: 10rem;
+            }
+  
+            &-captionD {
+                font-size: 1.3rem;
+            }
+  
+            &-gridH {
+                font-size: 10rem;
+            }
+  
+            &-captionH {
+                font-size: 1.3rem;
+            }
+  
+            &-gridM {
+                font-size: 10rem;
+            }
+  
+            &-captionM {
+                font-size: 1.3rem;
+            }
+  
+            &-gridS {
+                font-size: 10rem;
+            }
+  
+            &-captionS {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+/*Portrait iPad Pro*/
+@media (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) {
+    .nav {
+        height: 6.25rem;
+        @include flex-jc-sb-ai-c;
+        padding: 5rem;
+
+        &__img {
+            width: 26rem;
+            height: 5rem;
+        }
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 4.5rem;
+                color: $white;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+
+        &__item {
+            width: 16rem;
+
+            & a {
+                font-size: 3.440rem;
+            }
+        }
+    }
+
+    .main {
+        &__next-launch {
+            display: block;
+            text-align: center;
+    
+            & h1 {
+                font-size: 5rem;
+            }
+    
+            & span {
+                margin-left: 0;
+                font-size: 5.5rem;
+            }
+        }
+        
+        &__countdown {
+            width: 80vw;
+            height: 50vh;
+            @include grid-countdown-mobile;
+
+            &-gridD { 
+                grid-area: 1 / 1 / 2 / 2;
+                font-size: 15rem;
+            }
+  
+            &-captionD {
+                grid-area: 2 / 1 / 3 / 2; 
+                font-size: 2rem;
+            }
+  
+            &-gridH {
+                grid-area: 1 / 2 / 2 / 3;
+                font-size: 15rem;
+            }
+  
+            &-captionH {
+                grid-area: 2 / 2 / 3 / 3; 
+                font-size: 2rem;
+            }
+  
+            &-gridM {
+                grid-area: 3 / 1 / 4 / 2; 
+                font-size: 15rem;
+            }
+  
+            &-captionM {
+                grid-area: 4 / 1 / 5 / 2; 
+                font-size: 2rem;
+            }
+  
+            &-gridS {
+                grid-area: 3 / 2 / 4 / 3; 
+                font-size: 15rem;
+            }
+  
+            &-captionS {
+                grid-area: 4 / 2 / 5 / 3;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+/*Landscape Small Size*/
+@media (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
+    .nav {
+        height: 5.25rem;
+        @include flex-jc-sb-ai-c;
+        padding: 1.5rem;
+
+        &__img {
+            width: 15rem;
+            height: auto;
+        }
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 2.2rem;
+                color: $white;
+            }    
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+    }
+    
+    .main {
+        &__next-launch {
+            padding-bottom: 0.7rem;
+
+            & h1 {
+                font-size: 2rem;
+            }
+    
+            & span {
+                font-size: 2.3rem;
+            }
+        }
+
+        &__countdown {
+            width: 95vw;
+            margin-bottom: 1rem;
+
+            &-gridD { 
+                font-size: 6.5rem;
+            }
+      
+            &-captionD {
+                font-size: 1rem;
+            }
+      
+            &-gridH {
+                font-size: 6.5rem;
+            }
+      
+            &-captionH {
+                font-size: 1rem;
+            }
+      
+            &-gridM {
+                font-size: 6.5rem;
+            }
+      
+            &-captionM {
+                font-size: 1rem;
+            }
+      
+            &-gridS {
+                font-size: 6.5rem;
+            }
+      
+            &-captionS {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+/*Landscape Medium Size*/
+@media (min-width: 667px) and (max-width: 1024px) and (orientation: landscape) {
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 2.20rem;
+                color: $white;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+    }
+
+    .main {
+        &__next-launch {
+            & h1 {
+                font-size: 2.3rem;
+            }
+    
+            & span {
+                font-size: 2.5rem;
+            }
+        }
+
+        &__countdown {
+            width: 95vw;
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+
+/*iPad Landscape*/
+@media (min-width: 1024px) and (max-width: 1112px) and (orientation: landscape) {
+    .main {
+        &__next-launch {
+            padding-bottom: 0.7rem;
+
+            & h1 {
+                font-size: 2.8rem;
+            }
+    
+            & span {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+/*iPad Pro and Nest Hub Max Landscape*/
+@media (min-width: 1112px) and (max-width: 1366px) and (orientation: landscape) {
+    .nav {
+        height: 5.25rem;
+        @include flex-jc-sb-ai-c;
+        padding: 4rem;
+
+        &__img {
+            width: 20rem;
+        }
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 3rem;
+                color: $white;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+
+        &__item {
+            width: 16rem;
+
+            & a {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .main {
+        &__next-launch {
+            padding-bottom: 0.7rem;
+
+            & h1 {
+                font-size: 3.8rem;
+            }
+    
+            & span {
+                font-size: 4rem;
+            }
+        }
+
+        &__countdown {
+            width: 95vw;
+    
+            &-gridD { 
+                font-size: 8.5rem;
+            }
+          
+            &-captionD {
+                font-size: 1.3rem;
+            }
+          
+            &-gridH {
+                font-size: 8.5rem;
+            }
+          
+            &-captionH {
+                font-size: 1.3rem;
+            }
+          
+            &-gridM {
+                font-size: 8.5rem;
+            }
+          
+            &-captionM {
+                font-size: 1.3rem;
+            }
+          
+            &-gridS {
+                font-size: 8.5rem;
+            }
+          
+            &-captionS {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
