@@ -157,7 +157,7 @@
             @include grid-countdown-mobile;
 
             &-gridD { 
-                grid-area: 1 / 1/ 2 / 2;
+                grid-area: 1 / 1 / 2 / 2;
                 font-size: 7.2rem;
             }
   
@@ -165,7 +165,6 @@
                 grid-area: 2 / 1 /2 / 1;
             }
 
-      
             &-gridH {
                 grid-area: 1 / 2 / 2 / 3;
                 font-size: 7.2rem;
