@@ -156,9 +156,19 @@
             height: 55vh;
             @include grid-countdown-mobile;
 
+            &-gridD { 
+                grid-area: 1 / 1/ 2 / 2;
+                font-size: 7.2rem;
+            }
+  
+            &-captionD {
+                grid-area: 2 / 1 /2 / 1;
+            }
+
       
             &-gridH {
                 grid-area: 1 / 2 / 2 / 3;
+                font-size: 7.2rem;
             }
       
             &-captionH {
@@ -166,7 +176,8 @@
             }
       
             &-gridM {
-                grid-area: 3 / 1 / 4 / 2; 
+                grid-area: 3 / 1 / 4 / 2;
+                font-size: 7.2rem; 
             }
       
             &-captionM {
@@ -174,7 +185,8 @@
             }
       
             &-gridS {
-                grid-area: 3 / 2 / 4 / 3; 
+                grid-area: 3 / 2 / 4 / 3;
+                font-size: 7.2rem; 
             }
       
             &-captionS {
