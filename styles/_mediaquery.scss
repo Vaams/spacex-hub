@@ -147,6 +147,7 @@
 
             & span {
                 @include flex-jc-c-ai-c;
+                margin-left: 0;
             }
         }
 
