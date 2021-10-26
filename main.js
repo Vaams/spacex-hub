@@ -1,4 +1,3 @@
-const menu = document.getElementById("menu");
 const bar_menu = document.getElementById("bar-mobile");
 
 async function getData(){
