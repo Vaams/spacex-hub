@@ -1,4 +1,5 @@
 const menu = document.getElementById("menu");
+const bar_menu = document.getElementById("bar-mobile");
 
 async function getData(){
     let response = await fetch("https://api.spacexdata.com/v5/launches/upcoming");
@@ -34,7 +35,7 @@ function launchCountdown() {
 }
 setInterval(launchCountdown, 1000);
 
-menu.addEventListener("click", () => {
+bar_menu.addEventListener("click", () => {
     list.classList.toggle("menu__open"); /*Dlaczego nie musze pobrać/zdefinować LIST jak "menu" u góry?*/
     document.getElementById("bar-mobile").style.zIndex = 1;
 });
