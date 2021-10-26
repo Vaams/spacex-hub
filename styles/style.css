@@ -16,7 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("/images/background_sky.jpg");
-  /*background-image: url("/images/background_sky.avif");*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -279,6 +278,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 0;
   }
   .main__countdown {
     width: 90vw;
@@ -287,20 +287,30 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 0.25fr 1fr 0.25fr;
   }
+  .main__countdown-gridD {
+    grid-area: 1/1/2/2;
+    font-size: 7.2rem;
+  }
+  .main__countdown-captionD {
+    grid-area: 2/1/2/1;
+  }
   .main__countdown-gridH {
     grid-area: 1/2/2/3;
+    font-size: 7.2rem;
   }
   .main__countdown-captionH {
     grid-area: 2/2/3/3;
   }
   .main__countdown-gridM {
     grid-area: 3/1/4/2;
+    font-size: 7.2rem;
   }
   .main__countdown-captionM {
     grid-area: 4/1/5/2;
   }
   .main__countdown-gridS {
     grid-area: 3/2/4/3;
+    font-size: 7.2rem;
   }
   .main__countdown-captionS {
     grid-area: 4/2/5/3;
