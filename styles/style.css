@@ -15,7 +15,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("/images/background_sky.jpg");
+  background-image: url("./images/background_sky.jpg");
   /*background-image: url("/images/background_sky.avif");*/
   background-repeat: no-repeat;
   background-position: center;
