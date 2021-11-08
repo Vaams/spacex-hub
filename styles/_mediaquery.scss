@@ -1,0 +1,463 @@
+@use "forwards" as *;
+/*Portrait Small Size*/
+@media (min-width: 320px) and (max-width: 360px) and (orientation: portrait) {
+    .nav__img {
+        width: 12.75rem;
+        height: 2.5rem;
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 2.20rem;
+                color: $white;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+    }
+
+    .main {
+        &__next-launch {
+            display: block;
+            text-align: center;
+
+            & h1 {
+                font-size: 2.3rem;
+            }
+
+            & span {
+                font-size: 2.5rem;
+                @include flex-jc-c-ai-c;
+            }
+        }
+
+        &__countdown {
+            width: 90vw;
+            height: 60vh;
+            @include grid-countdown-mobile;
+            column-gap: 0;
+            row-gap: 0;
+            margin-bottom: 1.25rem;
+            @include grid-countdown-items-portrait-mobile;
+        }
+    }
+}
+
+/*Portrait Medium Size*/
+@media (min-width: 375px) and (max-width: 786px) and (orientation: portrait) {
+    .nav {
+        &__img {
+            width: 12.75rem;
+            height: 2.5rem;
+        }
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+        .fa-bars {
+            font-size: 2.20rem;
+            color: $white;
+        }
+    }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+    }
+
+    .main {
+        &__next-launch {
+            display: block;
+
+            & span {
+                @include flex-jc-c-ai-c;
+                margin-left: 0;
+            }
+        }
+
+        &__countdown {
+            width: 90vw;
+            height: 55vh;
+            @include grid-countdown-mobile;
+            @include grid-countdown-items-portrait-mobile;
+        }
+    }
+}
+
+/*Portrait iPad*/
+@media (min-width: 768px) and (max-width: 834px) and (orientation: portrait) {
+    .nav {
+        height: 7.25rem;
+
+        &__img {
+            width: 16rem;
+            height: 3.5rem;
+        }
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+        .fa-bars {
+            font-size: 2.7rem;
+            color: $white;
+        }
+    }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+
+        &__item {
+            width: 16rem;
+
+            & a {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .main {
+        &__next-launch {
+            & h1 {
+                font-size: 3.3rem;
+            }
+    
+            & span {
+                margin-left: 0;
+                font-size: 3.6rem;
+            }
+        }
+
+        &__countdown {
+            width: 80vw;
+            @include grid-countdown-items-portrait-mobile;
+
+            &-gridD, &-gridH, &-gridM, &-gridS {
+                font-size: 10rem;
+            }
+    
+            &-captionD, &-captionH, &-captionM, &-captionS  {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+/*Portrait iPad Pro*/
+@media (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) {
+    .nav {
+        height: 6.25rem;
+        @include flex-jc-sb-ai-c;
+        padding: 5rem;
+
+        &__img {
+            width: 26rem;
+            height: 5rem;
+        }
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 4.5rem;
+                color: $white;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+
+        &__item {
+            width: 16rem;
+
+            & a {
+                font-size: 3.440rem;
+            }
+        }
+    }
+
+    .main {
+        &__next-launch {
+            display: block;
+            text-align: center;
+    
+            & h1 {
+                font-size: 5rem;
+            }
+    
+            & span {
+                margin-left: 0;
+                font-size: 5.5rem;
+            }
+        }
+        
+        &__countdown {
+            width: 80vw;
+            height: 60vh;
+            @include grid-countdown-mobile;
+            @include grid-countdown-items-portrait-mobile;
+
+            &-gridD, &-gridH, &-gridM, &-gridS {
+                font-size: 15rem;
+            }
+    
+            &-captionD, &-captionH, &-captionM, &-captionS {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+/*Landscape Small Size*/
+@media (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
+    .nav {
+        height: 5.25rem;
+        @include flex-jc-sb-ai-c;
+        padding: 1.5rem;
+
+        &__img {
+            width: 15rem;
+            height: auto;
+        }
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 2.2rem;
+                color: $white;
+            }    
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+    }
+    
+    .main {
+        &__next-launch {
+            padding-bottom: 0.7rem;
+
+            & h1 {
+                font-size: 2rem;
+            }
+    
+            & span {
+                font-size: 2.3rem;
+            }
+        }
+
+        &__countdown {
+            width: 95vw;
+            margin-bottom: 1rem;
+            @include grid-countdown-items-landscape-mobile;
+        }
+    }
+}
+
+/*Landscape Medium Size*/
+@media (min-width: 667px) and (max-width: 1024px) and (orientation: landscape) {
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 2.20rem;
+                color: $white;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+    }
+
+    .main {
+        &__next-launch {
+            & h1 {
+                font-size: 2.3rem;
+            }
+    
+            & span {
+                font-size: 2.5rem;
+            }
+        }
+
+        &__countdown {
+            width: 95vw;
+            margin-bottom: 1.25rem;
+            @include grid-countdown-items-landscape-mobile;
+        }
+    }
+}
+
+/*iPad Landscape*/
+@media (min-width: 1024px) and (max-width: 1112px) and (orientation: landscape) {
+    .main {
+        &__next-launch {
+            padding-bottom: 0.7rem;
+
+            & h1 {
+                font-size: 2.8rem;
+            }
+    
+            & span {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+/*iPad Pro and Nest Hub Max Landscape*/
+@media (min-width: 1112px) and (max-width: 1366px) and (orientation: landscape) {
+    .nav {
+        height: 5.25rem;
+        @include flex-jc-sb-ai-c;
+        padding: 4rem;
+
+        &__img {
+            width: 20rem;
+        }
+    }
+
+    .menu {
+        &__link {
+            display: flex;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+
+            .fa-bars {
+                font-size: 3rem;
+                color: $white;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__open {
+            width: 100vw;
+            height: 100vh;
+            @include flex-jc-se-ai-c;
+            flex-direction: column;
+            background-color: $background-menu-mobile;
+            @include position-absolute-zero;
+        }
+
+        &__item {
+            width: 16rem;
+
+            & a {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .main {
+        &__next-launch {
+            padding-bottom: 0.7rem;
+
+            & h1 {
+                font-size: 3.8rem;
+            }
+    
+            & span {
+                font-size: 4rem;
+            }
+        }
+
+        &__countdown {
+            width: 95vw;
+            @include grid-countdown-items-landscape-mobile;
+
+            &-gridD, &-gridH, &-gridM, &-gridS {
+                font-size: 8.5rem;
+            }
+    
+            &-captionD, &-captionH, &-captionM, &-captionS {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
